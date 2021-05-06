@@ -17,11 +17,14 @@
     padding: 0;
 }
 
+body {
+    background-color: #313131;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #313131;
 }
 
 .header {
@@ -36,7 +39,7 @@
 
 .header::before {
     content: '';
-    display: none;
+    display: block;
     width: 100%;
     left: 0;
     height: 6px;
@@ -44,21 +47,6 @@
     top: 0;
     background-color: #A7C353;
 }
-
-.header:hover::before {
-    display: block;
-}
-
-/* .header::after {
-    content: '';
-    display: inline-block;
-    width: 1120px;
-    left: 20px;
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    background-color: #A7C353;
-} */
 
 .logo {
     width: 25%;
@@ -112,6 +100,11 @@
     padding: 45px 20px;
 }
 
+.nav__menu a:first-child {
+    color:#fff;
+    background: #A7C353;
+}
+
 .nav__bar:hover .header::before {
     background-color: red;
 }
@@ -130,6 +123,7 @@
     text-align: center;
     font-size: 22px;
     font-style: italic;
+    color: #666666;
 }
 
 .slider__wrapper {
